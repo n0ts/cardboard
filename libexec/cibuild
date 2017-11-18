@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Check everything for CI.
 
 libexec=$(dirname "$0")

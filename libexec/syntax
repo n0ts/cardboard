@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Check the syntax of all Puppet and Ruby files.
 
 set -e

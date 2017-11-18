@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Install Puppet deps for specs if necessary.
 
 set -e
