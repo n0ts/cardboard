@@ -3,11 +3,17 @@
 
 set -e
 
-# FIXME
-exec .bundle/binstubs/puppet-lint \
-  --fail-on-warnings \
-  --no-80chars-check \
-  --no-autoloader_layout-check \
-  --no-class_inherits_from_params_class-check \
-  --with-filename manifests \
-  "$@"
+puppets=`find . -type f -path './manifests/*' -name '*.pp' -print 2>/dev/null`
+
+for puppet in $puppets; do
+  /bin/echo -n "${puppet}: "
+  .bundle/binstubs/puppet-lint \
+      --fail-on-warnings \
+      --no-80chars-check \
+      --no-autoloader_layout-check \
+      --no-class_inherits_from_params_class-check \
+      $puppet && echo "Lint OK"
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
+done
