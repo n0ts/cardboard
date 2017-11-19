@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cardboard23 (2.1.2)
+    cardboard23 (3.1.0)
       boxen23 (~> 3.1)
       librarian-puppet (~> 2.2)
       puppet-lint (~> 2.3)
