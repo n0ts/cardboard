@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cardboard23 (3.1.0)
+    cardboard23 (3.1.2)
       boxen23 (~> 3.1)
       librarian-puppet (~> 2.2)
       puppet-lint (~> 2.3)
@@ -13,7 +13,7 @@ GEM
   specs:
     addressable (2.3.8)
     ansi (1.5.0)
-    boxen23 (3.1.5)
+    boxen23 (3.1.7)
       ansi (~> 1.5)
       hiera (~> 3.4.2)
       highline (~> 1.7.8)
