@@ -10,6 +10,7 @@ for puppet in $puppets; do
   .bundle/binstubs/puppet-lint \
       --fail-on-warnings \
       --no-80chars-check \
+      --no-140chars-check \
       --no-autoloader_layout-check \
       --no-class_inherits_from_params_class-check \
       $puppet && echo "Lint OK"
