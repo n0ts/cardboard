@@ -1,9 +1,10 @@
 PATH
   remote: .
   specs:
-    cardboard23 (3.0.0a)
-      boxen23 (= 4.0.0a)
+    cardboard23 (3.0.0b)
+      boxen23 (~> 4.0.0a)
       librarian-puppet (~> 2.2)
+      librarianp (~> 0.6)
       puppet-lint (~> 2.3)
       puppetlabs_spec_helper (~> 2.4)
       rspec-puppet (~> 2.6)
