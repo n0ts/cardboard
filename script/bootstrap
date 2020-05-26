@@ -6,4 +6,5 @@ set -e
 cd $(dirname "$0")/..
 
 rm -rf .bundle/config
-bundle install --path .bundle --quiet
+bundle config --local path '.bundle'
+bundle install --quiet
